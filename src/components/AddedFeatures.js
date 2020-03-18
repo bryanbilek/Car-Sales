@@ -24,5 +24,5 @@ const mapStateToProps = state => {
     car: state.car
   }
 }
-export default connect((mapStateToProps), {})(AddedFeatures);
+export default connect((mapStateToProps), null)(AddedFeatures);
 

@@ -22,9 +22,15 @@ export const initialState = {
           ...state, 
           car: {
             ...state.car,
-            features: [...state.car.features, action.payload]
-          }
+            features: [...state.car.features, action.payload],
+            price: state.car.price + state.features.price
+          },
+          additionalFeatures: [...state.additionalFeatures.id !== additionalFeatures.id],
+          
         }
+      }
+      case 'REMOVE_FEATURE': {
+        return
       }
       default:
         return state;
