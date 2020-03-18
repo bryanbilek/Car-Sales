@@ -15,5 +15,5 @@ const mapStateToProps = state => {
     additionalPrice: state.additionalPrice
   }
 }
-export default connect((mapStateToProps), null)(Total);
+export default connect(mapStateToProps, null)(Total);
 
